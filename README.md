@@ -1,6 +1,7 @@
 # 09-README-Generator-Trevor-Kuhner# Project Title
 
-![Demo Gif](image.png)
+![index_js_-_09-README-Generator-Trevor-Kuhner_-_Visual_Studio_Code_2023-06-09_08-37-02_AdobeExpress(1)](https://github.com/TKuhner/09-README-Generator-Trevor-Kuhner/assets/71107536/0edca671-75a3-4619-9891-a4639702b300)
+
 
 ## Table of Contents
 
