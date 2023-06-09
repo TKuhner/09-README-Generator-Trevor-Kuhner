@@ -116,10 +116,9 @@ inquirer.prompt([
         }
     }
 ]).then(function ({ title, description, installation, usage, contribution, test, license, github, email }) {
+    // function to write README file
     fs.writeFile('./assets/dist/READMETemp.md', generateMarkdown({ title, description, installation, usage, contribution, test, license, github, email }), err => {
 
         err ? console.log(err) : console.log('README file created successfully!');
     });
 });
-
-// function to write README file
