@@ -1,7 +1,6 @@
-function generateMarkdown({ title, description, installation, usage, license, contributing, tests, questions }) {
+function generateMarkdown({ title, description, installation, usage, contribution, test, license, github, email }) {
 
     return `# ${title}
-${badge[license]}
 
 ## Description
 ${description}  
@@ -9,9 +8,9 @@ ${description}
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contributing](#contributing)
+* [Contributors](#contribution)
 * [Tests](#tests)
-* [Questions](#questions)
+* [Contact](#contact)
 * [License](#license)
 
 ## Installation
@@ -20,16 +19,16 @@ ${installation}
 ## Usage
 ${usage}
 
-## Contributing
-${contributing}
+## Contribution
+${contribution}
 
 ## Tests
-${tests}
+${test}
 
-## Questions
+## Contact
 Contact email: ${email}
 GitHub: ${github})
-${questions}
+
 
 ## License
 This project is licensed under the terms of the ${license} license.

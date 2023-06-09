@@ -60,12 +60,12 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'contribution',
-        message: 'Please enter contribution guidelines for your project.',
+        message: 'Please enter contributors for your project.',
         validate: contributionInput => {
             if (contributionInput) {
                 return true;
             } else {
-                console.log('Please enter contribution guidelines for your project.');
+                console.log('Please enter contributors for your project.');
                 return false;
             }
         }
@@ -92,12 +92,12 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'github',
-        message: 'Please enter your GitHub username.',
+        message: 'Please enter your GitHub URL.',
         validate: githubInput => {
             if (githubInput) {
                 return true;
             } else {
-                console.log('Please enter your GitHub username.');
+                console.log('Please enter your GitHub URL.');
                 return false;
             }
         }
@@ -116,7 +116,7 @@ inquirer.prompt([
         }
     }
 ]).then(function ({ title, description, installation, usage, contribution, test, license, github, email }) {
-    fs.writeFile('./dist/READMETemp.md', generateMarkdown({ title, description, installation, usage, contribution, test, license, github, email }), err => {
+    fs.writeFile('./assets/dist/READMETemp.md', generateMarkdown({ title, description, installation, usage, contribution, test, license, github, email }), err => {
 
         err ? console.log(err) : console.log('README file created successfully!');
     });
